@@ -66,4 +66,4 @@ Compilation and running tests
       cd simco
       npm install
       grunt
-      mocha
+      ./node_modules/mocha/bin/mocha
