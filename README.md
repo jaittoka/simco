@@ -59,4 +59,11 @@ If you load the production configuration with `conf = loadConfig './production' 
 all the same values than in the default configuration exept the value for `http.secure` that
 was overridden to be `true`.
 
+Compilation and running tests
+=============================
 
+      git clone git@github.com:jaittoka/simco.git
+      cd simco
+      npm install
+      grunt
+      mocha
