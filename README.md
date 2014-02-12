@@ -38,7 +38,7 @@ which you can extend other configuration files.
 
 Fo example if you have to files: default.coffee and production.coffee.
 
-'''default.coffee'''
+`default.coffee`
 
       module.exports = (extend) ->
         db:
@@ -49,14 +49,14 @@ Fo example if you have to files: default.coffee and production.coffee.
           port: 5000
           secure: false
 
-'''production.coffee'''
+`production.coffee`
 
       module.exports = (extend) -> extend './default',
         http:
           secure: true
 
-If you load the production configuration with '''conf = loadConfig './production' ''', it has 
-all the same values than in the default configuration exept the value for '''http.secure''' that
-was overridden to be '''true'''.
+If you load the production configuration with `conf = loadConfig './production' `, it has 
+all the same values than in the default configuration exept the value for `http.secure` that
+was overridden to be `true`.
 
 
