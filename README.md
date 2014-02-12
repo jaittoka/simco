@@ -6,8 +6,8 @@ Extremely simple config file handling
 Usage
 =====
 
-   loadConfig = require '../lib/simco'
-   conf = loadConfig './default'
+      loadConfig = require '../lib/simco'
+      conf = loadConfig './default'
 
 Config file
 ===========
