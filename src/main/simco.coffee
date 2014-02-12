@@ -4,12 +4,9 @@ isObject = (value) -> value? and toString.call(value) is '[object Object]'
 
 extend = (obj = {}, obj2 = {}) ->
   for name, value of obj2     
-    if isObject value         
-      n = obj[name]
-      if isObject n           
-        extend n, value
-      else
-        obj[name] = value
+    n = obj[name]
+    if isObject(value) and isObject(n)
+      extend n, value
     else
       obj[name] = value
   obj
