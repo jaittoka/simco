@@ -14,9 +14,6 @@ extend = (obj = {}, obj2 = {}) ->
       obj[name] = value
   obj
 
-module.exports = load = (name, obj, parent) -> 
-  if parent?
-    resolved = path.join path.dirname(parent), name
-  else
-    resolved = path.resolve name
+module.exports = load = (name, obj, parent = module.parent.filename) -> 
+  resolved = path.join path.dirname(parent), name
   extend require(resolved)((obj1, obj2) -> load obj1, obj2, resolved), obj

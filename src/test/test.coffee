@@ -3,7 +3,7 @@ C = require '../lib/simco'
 
 describe 'Loading simple', () ->
   it 'should load correct values', () ->
-    conf = C './test/default'
+    conf = C './default'
     assert.equal 'testdb', conf.db.name
     assert.equal 27001, conf.db.port
     assert.equal 'localhost', conf.db.host
@@ -12,7 +12,7 @@ describe 'Loading simple', () ->
 
 describe 'Load and extend', () ->
   it 'should return override values', () ->
-    conf = C './test/production'    
+    conf = C './production'    
     assert.equal 'testdb', conf.db.name
     assert.equal 27001, conf.db.port
     assert.equal 'localhost', conf.db.host
