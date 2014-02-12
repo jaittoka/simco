@@ -1,0 +1,24 @@
+{
+  "name": "simco",
+  "version": "0.1.1",
+  "description": "Very simple config file handling.",
+  "keywords": [
+    "configuration",
+    "config",
+    "simple"
+  ],
+  "homepage": "https://github.com/jaittoka/simco",
+  "author": "Jukka Aittokallio <jukka@aittokallio.com>",
+  "licence": "MIT",
+  "main": "lib/simco.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jaittoka/simco.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-coffee": "~0.10.0",
+    "mocha": "~1.17.1"
+  }
+}
