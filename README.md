@@ -3,10 +3,15 @@ Simco
 
 Extremely simple config file handling
 
+Install
+=======
+
+      npm install simco
+
 Usage
 =====
 
-      loadConfig = require '../lib/simco'
+      loadConfig = require 'simco'
       conf = loadConfig './default'
 
 Config file
